@@ -18,8 +18,8 @@ func main() {
 
 	// ✅ 1. แก้ไข CORS: เพิ่ม "PATCH" และ "OPTIONS"
 	r.Use(cors.New(cors.Config{
-		AllowOrigins:     []string{"http://localhost:5173", "https://shop9bath.pages.dev", "http://shop9bath.online"},
-		AllowMethods:     []string{"GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"}, // 👈 ต้องมี PATCH
+		AllowOrigins:     []string{"http://localhost:5173", "https://shop9bath.pages.dev", "https://shop9bath.online"},
+		AllowMethods:     []string{"GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"},
 		AllowHeaders:     []string{"Origin", "Content-Type", "Authorization"},
 		ExposeHeaders:    []string{"Content-Length"},
 		AllowCredentials: true,
